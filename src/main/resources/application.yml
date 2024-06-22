@@ -1,0 +1,15 @@
+server:
+  port: 8654
+spring:
+  application:
+    name: amazon-rest-api
+  datasource:
+    url: jdbc:postgresql://localhost:5433/users_db
+    username: user_db
+    password: pass_db
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
